@@ -1,0 +1,28 @@
+{
+  "name": "csint-pro-API-Example",
+  "version": "1.0.0",
+  "description": "Node.js examples for the csint.pro intelligence platform API",
+  "main": "src/client.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node examples.js",
+    "status": "node -e \"const C=require('./src/client');new C(process.env.CSINT_API_KEY).status().then(d=>console.log(JSON.stringify(d,null,2))).catch(e=>console.error(e.message))\""
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "osint",
+    "csint",
+    "intelligence",
+    "breach",
+    "cybersecurity",
+    "api"
+  ],
+  "author": "csint.pro",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hyperlols/csint.pro-API-Example"
+  }
+}
